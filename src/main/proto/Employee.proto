@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package genetic;
+
+option java_package = "cr.tec.genetic.struct";
+option java_outer_classname = "EmployeeProto";
+
+message Employee {
+	string firstname = 1;
+	string lastname = 2;
+	string middlename = 6;
+	string country = 9;
+	int32 id = 3;
+	double salary = 4;
+	repeated Department dept = 5;
+}
+
+message Department {
+	int32 deptid = 1;
+	string deptname = 2;
+}
+
+
+// The greeting service definition.
+service Greeter {
+	// Sends a greeting
+	rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+	string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+	string message = 1;
+}

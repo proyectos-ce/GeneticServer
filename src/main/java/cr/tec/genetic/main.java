@@ -15,11 +15,17 @@ import java.io.IOException;
 public class main {
 
 	public static void main(String[] args) {
+
+
+
+
+
 		// creating the employee
 		Employee john = Employee.newBuilder()
 				.setId(1)
 				.setFirstname("John")
 				.setLastname("Villegas")
+				.setCountry("CR")
 				.setSalary(100000)
 				.addDept(
 					Department.newBuilder()
