@@ -83,7 +83,7 @@ public class PopulationManager {
 		}
 	}
 
-	private void createNextGeneration() {
+	public void createNextGeneration() {
 		sortbyFitness();
 		setProbabilityForEach();
 		Vector<DNA> nextGeneration = new Vector<DNA>();
@@ -100,7 +100,7 @@ public class PopulationManager {
 	private DNA obtainRandomFromPool() {
 		double prob = Math.random();
 		DNA randomMate = new DNA();
-		for (DNA aPopulation : population) {
+		for (DNA aPopulation : this.population) {
 			prob -= aPopulation.getProbability();
 			if (prob <= 0) {
 				randomMate = aPopulation;

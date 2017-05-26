@@ -27,6 +27,11 @@ public class DNA {
 	private int[] genes = new int[genNumber];
 	private double probability;
 	private double fitness;
+
+	public void setHash(String nameHash) {
+		this.nameHash = nameHash;
+	}
+
 	private String nameHash;
 
 	public int getGen(int num) {

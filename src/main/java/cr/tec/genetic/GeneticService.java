@@ -23,10 +23,28 @@ public class GeneticService {
 	@Path("/create/{id}")
 	public Vector<DNA> getFirstPopulation(@PathParam("id") int id) {
 		if (id == 1) {
-			pop1.initialize(500);
+			pop1.initialize(50);
 			return pop1.getPopulation();
 		} else {
-			pop2.initialize(500);
+			pop2.initialize(50);
+			return pop2.getPopulation();
+		}
+	}
+
+
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/update/{id}")
+	public Vector<DNA> updatePopulation(@PathParam("id") int id, Vector<DNA> vector) {
+		if (id == 1) {
+			pop1.setPopulation(vector);
+			pop1.createNextGeneration();
+			return pop1.getPopulation();
+
+		} else {
+			pop2.setPopulation(vector);
+			pop2.createNextGeneration();
 			return pop2.getPopulation();
 		}
 	}
