@@ -1,7 +1,0 @@
-cr/tec/genetic/Track.class
-cr/tec/genetic/geneticStructures/Genes.class
-cr/tec/genetic/Application.class
-cr/tec/genetic/geneticStructures/PopulationManager.class
-cr/tec/genetic/geneticStructures/DNA.class
-cr/tec/genetic/geneticStructures/DNAManager.class
-cr/tec/genetic/GeneticService.class
