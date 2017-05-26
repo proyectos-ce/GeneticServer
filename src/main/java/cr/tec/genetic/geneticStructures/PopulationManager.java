@@ -30,7 +30,7 @@ public class PopulationManager {
 		this.population = population;
 	}
 
-	private void initialize(int maxPopulation) {
+	public void initialize(int maxPopulation) {
 		this.maxPopulation = maxPopulation;
 
 		this.population.clear();
