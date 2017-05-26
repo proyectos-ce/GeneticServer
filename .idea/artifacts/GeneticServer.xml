@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="GeneticServer">
-    <output-path>$PROJECT_DIR$/out/artifacts/GeneticServer</output-path>
-    <root id="archive" name="GeneticServer.war">
-      <element id="artifact" artifact-name="GeneticServer:war exploded" />
-    </root>
-  </artifact>
-</component>
